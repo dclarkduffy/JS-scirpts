@@ -3,8 +3,8 @@
 
 ## Recently created for live JS interviews
 
-**find_dupes_in_Array.js**:	* *Locate duplicates in a given array of integers.* *
+**find_dupes_in_Array.js**:	 *Locate duplicates in a given array of integers.* 
 
-**binaryLongestLenOfOnes.js**:	* *Evaluate and find the count of consecutive number ones in a given binary string.* *
+**binaryLongestLenOfOnes.js**:	 *Evaluate and find the count of consecutive number ones in a given binary string.* 
 
-**sum2Integer.js**:	* Evaluate an array of numbers to find if any two numbers add up to the given integer. *
+**sum2Integer.js**:		 *Evaluate an array of numbers to find if any two numbers add up to the given integer.* 
