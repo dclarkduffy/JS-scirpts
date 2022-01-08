@@ -3,7 +3,7 @@
 
 ## Recently created for live JS interviews
 
-fileName:	-**find_dupes_in_Array.js**
+fileName:	- **find_dupes_in_Array.js**
 fileDesc:	* *Locate duplicates in a given array of integers.* *
 
 fileName:	**binaryLongestLenOfOnes.js**
