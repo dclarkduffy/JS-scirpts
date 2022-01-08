@@ -7,4 +7,4 @@
 
 **binaryLongestLenOfOnes.js**:	* *Evaluate and find the count of consecutive number ones in a given binary string.* *
 
-**sum2Integer.js**:	* *Evaluate an array of numbers to find if any two numbers add up to the given integer.* *
+**sum2Integer.js**:	* Evaluate an array of numbers to find if any two numbers add up to the given integer. *
