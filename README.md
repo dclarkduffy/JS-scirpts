@@ -8,3 +8,7 @@
 **binaryLongestLenOfOnes.js**:	 *Evaluate and find the count of consecutive number ones in a given binary string.* 
 
 **sum2Integer.js**:		 *Evaluate an array of numbers to find if any two numbers add up to the given integer.* 
+
+## HackerRank Challenges
+
+**sherlockString.js**:	 *Two strings are anagrams of each other if the letters of one string can be rearranged to form the other string. Given a string, find the number of pairs of substrings of the string that are anagrams of each other.* 
