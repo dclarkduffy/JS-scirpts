@@ -3,11 +3,8 @@
 
 ## Recently created for live JS interviews
 
-fileName:	**find_dupes_in_Array.js**
-  fileDesc:	* *Locate duplicates in a given array of integers.* *
+**find_dupes_in_Array.js**:	* *Locate duplicates in a given array of integers.* *
 
-fileName:	**binaryLongestLenOfOnes.js**
-  fileDesc:	* *Evaluate and find the count of consecutive number ones in a given binary string.* *
+**binaryLongestLenOfOnes.js**:	* *Evaluate and find the count of consecutive number ones in a given binary string.* *
 
-fileName:	**sum2Integer.js**
-  fileDesc:	* *Evaluate an array of numbers to find if any two numbers add up to the given integer.* *
+**sum2Integer.js**:	* *Evaluate an array of numbers to find if any two numbers add up to the given integer.* *
