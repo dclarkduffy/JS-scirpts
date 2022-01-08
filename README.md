@@ -1,7 +1,7 @@
 # JS scripts
  This is a random collection of javascript files I've created. Some for fun, study and live interviews.
 
-## Recently created for live JS interviews
+## Interview Challenges
 
    - **find_dupes_in_Array.js**:	*Locate duplicates in a given array of integers.* 
 
