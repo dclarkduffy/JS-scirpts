@@ -14,3 +14,7 @@
    - **sherlockString.js**:	 *Two strings are anagrams of each other if the letters of one string can be rearranged to form the other string. Given a string, find the number of pairs of substrings of the string that are anagrams of each other.* 
 
    - **makeAnagram.js**:	*Given two strings, s1 and s2, that may not be of the same length, determine the minimum number of character deletions required to make s1 and s2 anagrams. Any characters can be deleted from either of the strings.* 
+
+## Work Related
+
+   - **vip_filter.js**:	*This script is used in Mirth Connect as a channel filter. If select values appear in HL7 PV1.16, the message will not transmit* 
