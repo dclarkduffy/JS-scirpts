@@ -17,6 +17,9 @@
 
    - **newYearChaos.js**:	*It is New Year's Day and people are in line for the Wonderland rollercoaster ride. Each person wears a sticker indicating their initial position in the queue from 1 to n . Any person can bribe the person directly in front of them to swap positions, but they still wear their original sticker. One person can bribe at most two others. Determine the minimum number of bribes that took place to get to a given queue order. Print the number of bribes, or, if anyone has bribed more than two people, print Too chaotic.*  
 
+   - **alternatingCharacters.js**:	*You are given a string containing characters A and B only. Your task is to change it into a string such that there are no matching adjacent characters. To do this, you are allowed to delete zero or more characters in the string. Your task is to find the minimum number of required deletions.* 
+
 ## Work Related
 
    - **vip_filter.js**:	*This script is used in Mirth Connect as a channel filter. If select values appear in HL7 PV1.16, the message will not transmit* 
+
