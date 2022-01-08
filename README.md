@@ -1,4 +1,4 @@
-# JavaScript Collection
+# The Duffy JavaScript Collection
  This is a random collection of javascript files I've created. Some for fun, study and live interviews.
 
 ## Interview Challenges
