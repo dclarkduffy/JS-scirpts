@@ -81,3 +81,20 @@ home:        ${home},
 cell:        ${cell}, 
 work:        ${work}, 
 preferred:   ${preferred}.`);
+
+
+/* Example input/output
+
+BEFORE:
+home:        555-555-5555, 
+cell:        215-630-1383, 
+work:        222-222-2222, 
+preferred:   999-999-9999.
+
+AFTER:
+home:        215-630-1383, 
+cell:        999-999-9999, 
+work:        555-555-5555, 
+preferred:   999-999-9999.
+
+*/
