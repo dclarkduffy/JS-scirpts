@@ -61,6 +61,13 @@ if (testLogic) {
   }
 }
 
+//Will need to convert this to mirth channel map
+console.log(`BEFORE:
+home:        ${home}, 
+cell:        ${cell}, 
+work:        ${work}, 
+preferred:   ${preferred}.`);
+
 //Check if preferred exists and if so apply custom logic
 if (preferred) {
   work = home;
@@ -69,7 +76,8 @@ if (preferred) {
 }
 
 //Will need to convert this to mirth channel map
-console.log(`home:        ${home}, 
+console.log(`AFTER:
+home:        ${home}, 
 cell:        ${cell}, 
 work:        ${work}, 
 preferred:   ${preferred}.`);
