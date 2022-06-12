@@ -75,58 +75,67 @@ if (
   preferred &&
   (preferred != home || preferred != cell || preferred != work)
 ) {
+  console.log("One");
   work = home;
   home = cell;
   cell = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only cell and work are given
-if (preferred && cell && work && (preferred != cell || preferred != work)) {
+} else if (
+  preferred &&
+  cell &&
+  work &&
+  (preferred != cell || preferred != work)
+) {
+  //Pref exists and doesn't match when only cell and work are given
+  console.log("Two");
   work = work;
   cell = cell;
   home = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only home and work are given
-if (preferred && home && work && (preferred != home || preferred != work)) {
+} else if (
+  preferred &&
+  home &&
+  work &&
+  (preferred != home || preferred != work)
+) {
+  //Pref exists and doesn't match when only home and work are given
+  console.log("Three");
   work = work;
   home = home;
   cell = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only home and cell is given
-if (preferred && home && cell && (preferred != home || preferred != cell)) {
+} else if (
+  preferred &&
+  home &&
+  cell &&
+  (preferred != home || preferred != cell)
+) {
+  //Pref exists and doesn't match when only home and cell is given
+  console.log("Four");
   cell = cell;
   home = home;
   work = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only work is given
-if (preferred && work && preferred != work) {
+} else if (preferred && work && preferred != work) {
+  //Pref exists and doesn't match when only work is given
+  console.log("Five");
   work = work;
   cell = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only cell is given
-if (preferred && cell && preferred != cell) {
+} else if (preferred && cell && preferred != cell) {
+  //Pref exists and doesn't match when only cell is given
+  console.log("Six");
   cell = cell;
   home = preferred = preferred;
-}
-
-//Pref exists and doesn't match when only home is given
-if (preferred && home && preferred != home) {
+} else if (preferred && home && preferred != home) {
+  //Pref exists and doesn't match when only home is given
+  console.log("Seven");
   home = home;
   cell = preferred = preferred;
-}
-
-//Pref exists and matches one of the three fields given ( home, cell or work )
-if (
+} else if (
+  //Pref exists and matches one of the three fields given ( home, cell or work )
   preferred &&
   home &&
   cell &&
   work &&
   (preferred == home || preferred == cell || preferred == work)
 ) {
+  console.log("Eight");
   cell = cell;
   work = work;
   home = home;
