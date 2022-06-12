@@ -68,11 +68,69 @@ cell:        ${cell},
 work:        ${work}, 
 preferred:   ${preferred}.`);
 
-//Check if preferred exists and if so apply custom logic
-if (preferred) {
+//Final analysis to figure out if any values to reassign. (LEFT SIDE WILL BE REPLACES WITH PAYLOAD FIELD)
+
+//Pref exists and doesn't match either three fields
+if (
+  preferred &&
+  (preferred != home || preferred != cell || preferred != work)
+) {
   work = home;
   home = cell;
   cell = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only cell and work are given
+if (preferred && cell && work && (preferred != cell || preferred != work)) {
+  work = work;
+  cell = cell;
+  home = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only home and work are given
+if (preferred && home && work && (preferred != home || preferred != work)) {
+  work = work;
+  home = home;
+  cell = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only home and cell is given
+if (preferred && home && cell && (preferred != home || preferred != cell)) {
+  cell = cell;
+  home = home;
+  work = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only work is given
+if (preferred && work && preferred != work) {
+  work = work;
+  cell = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only cell is given
+if (preferred && cell && preferred != cell) {
+  cell = cell;
+  home = preferred = preferred;
+}
+
+//Pref exists and doesn't match when only home is given
+if (preferred && home && preferred != home) {
+  home = home;
+  cell = preferred = preferred;
+}
+
+//Pref exists and matches one of the three fields given ( home, cell or work )
+if (
+  preferred &&
+  home &&
+  cell &&
+  work &&
+  (preferred == home || preferred == cell || preferred == work)
+) {
+  cell = cell;
+  work = work;
+  home = home;
+  preferred = preferred;
 }
 
 //Will need to convert this to mirth channel map
@@ -81,20 +139,3 @@ home:        ${home},
 cell:        ${cell}, 
 work:        ${work}, 
 preferred:   ${preferred}.`);
-
-
-/* Example input/output
-
-BEFORE:
-home:        555-555-5555, 
-cell:        215-630-1383, 
-work:        222-222-2222, 
-preferred:   999-999-9999.
-
-AFTER:
-home:        215-630-1383, 
-cell:        999-999-9999, 
-work:        555-555-5555, 
-preferred:   999-999-9999.
-
-*/
