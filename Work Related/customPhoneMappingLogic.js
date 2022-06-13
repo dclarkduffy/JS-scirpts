@@ -4,14 +4,23 @@ var home = null;
 var cell = null;
 var work = null;
 var preferred = null;
+
 var firstThirteenNum = "999-999-9999";
+//var firstThirteenNum = null;
 var firstThirteenType = "1001";
+
 var secThirteenNum = "555-555-5555";
+//var secThirteenNum = null;
 var secThirteenType = "7";
-var thirThirteenNum = "215-630-1383";
+
+//var thirThirteenNum = "215-630-1383";
+var thirThirteenNum = null;
 var thirThirteenType = "1";
-var firstFourteenNum = "222-222-2222";
+
+//var firstFourteenNum = "222-222-2222";
+var firstFourteenNum = null;
 var firstFourteenType = "8";
+
 var typesFound = [];
 
 if (firstThirteenType) typesFound.push([firstThirteenNum, firstThirteenType]);
@@ -60,7 +69,7 @@ if (testLogic) {
     }
   }
 }
-
+console.log(preferred == cell);
 //Will need to convert this to mirth channel map
 console.log(`BEFORE:
 home:        ${home}, 
@@ -73,41 +82,48 @@ preferred:   ${preferred}.`);
 //Pref exists and doesn't match either three fields
 if (
   preferred &&
-  (preferred != home || preferred != cell || preferred != work)
+  home &&
+  cell & work &&
+  preferred != home &&
+  preferred != cell &&
+  preferred != work
 ) {
   console.log("One");
   work = home;
   home = cell;
   cell = preferred = preferred;
 } else if (
+  //Pref exists and doesn't match when only cell and work are given
   preferred &&
   cell &&
   work &&
-  (preferred != cell || preferred != work)
+  preferred != cell &&
+  preferred != work
 ) {
-  //Pref exists and doesn't match when only cell and work are given
   console.log("Two");
   work = work;
   cell = cell;
   home = preferred = preferred;
 } else if (
+  //Pref exists and doesn't match when only home and work are given
   preferred &&
   home &&
   work &&
-  (preferred != home || preferred != work)
+  preferred != home &&
+  preferred != work
 ) {
-  //Pref exists and doesn't match when only home and work are given
   console.log("Three");
   work = work;
   home = home;
   cell = preferred = preferred;
 } else if (
+  //Pref exists and doesn't match when only home and cell is given
   preferred &&
   home &&
   cell &&
-  (preferred != home || preferred != cell)
+  preferred != home &&
+  preferred != cell
 ) {
-  //Pref exists and doesn't match when only home and cell is given
   console.log("Four");
   cell = cell;
   home = home;
